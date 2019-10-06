@@ -46,26 +46,15 @@ As a **standard user**, I want to **something** so I can **something**.
 * bulltin 3
 
 ## Misuser stories
-Also think about and define 2 misuser stories. Misuser stories are nothing more than user stories, except for users seeking to abuse your app. Use the same format as above, except replace user with misuser and use the ```goal``` to define the misuse goal. I.e.
-
-As a **misuser**, I want to **misuse goal** so I can **bad rationale**.
-
-e.g.
-
-As a **Fitbit misuser**, I want to **exploit the Fitbit companion app** so I can **steal user Fitness and GPS data**.
-
-Under each misuser story, identify at least one way you will counter this misuse in your application design.
-
-You can make use of the following markdown syntax to embed your misuser stories in your README.md file:
-
-```markdown
-## Misuser stories
-As a **misuser/misuser-role**, I want to **misuse goal** so I can **bad rationale**.
+As a **weather forecast app misuser**, I want to **exploit the email notification feature** so I can **notify unauthorized individuals of the forecast**.
 **Mitigations:**
-* Mitigation technique 1 to be used goes here
-* Mitigation technique 2 to be used goes here
-* etc
-```
+
+Using the If This Then That (IFTTT) WebHook and Email Notification engines the app can securely connect to the IFTTT service to ensure notifications cannot be redirected.
+
+As a **weather forecast app misuser**, I want to **exploit the OpenWeather API request** so I can **misrepresent the users location (long/lat)**.
+**Mitigations:**
+
+Using the OpenWeather API the app can securely connect to the API service with a key ensuring that the connection is secure and validated.
 
 ## Design
 Once you have a set of requirements, the next step is to think about how you want to create an application that meets those demands. This is design. In Milestone 1 you will come up with a design that meets your project requirements. Your design should be kept to the component/service level. A design is only as effective as it is communicable. If your design is overcomplicated or difficult to describe, then it means that you may have a poor design. What I want to see for Milestone 1 is that you have a clear picture in mind for how you will make an app to meet your requirements.

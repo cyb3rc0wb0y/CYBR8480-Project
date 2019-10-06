@@ -24,9 +24,6 @@ Are you someone that never watches tv or the news at night and the following day
 * Uses Weather API to gather weather data for the user
 * Allows for real time weather updates
 
-## Application requirements
-Requirements are extremely important for conducting a successful project. Collecting requirements about an application means understanding what your end user is going to do with the product. To understand requirements we often define user stories and use cases to encapsulate and represent behavior.
-
 ## User stories
 For milestone 1, you should define the 3 most important user stories for your product. Pay careful attention to structure the user stories as we discussed in CYBR8470. Specifically, submit your user stories using the following template. Include them directly on, or as a link from, your GitHub repo README.md file.
 

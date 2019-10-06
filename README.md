@@ -24,18 +24,6 @@ Are you someone that never watches tv or the news at night and the following day
 * Uses Weather API to gather weather data for the user
 * Allows for real time weather updates
 
-```markdown
-# Project Repo Name
-
-## Executive Summary
-Problem statement text goes here
-
-## Project Goals
-* Bulleted list item 1
-* Bulleted list item 2
-* etc
-```
-
 ## Application requirements
 Requirements are extremely important for conducting a successful project. Collecting requirements about an application means understanding what your end user is going to do with the product. To understand requirements we often define user stories and use cases to encapsulate and represent behavior.
 

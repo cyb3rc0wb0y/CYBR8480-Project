@@ -1,30 +1,16 @@
-# CYBR8480 Project Milestone 1: Project Ideation and Requirement Analysis
-
-## Overview
-This project milestone tasks you with developing and expressing a project idea, identifying its requirements, and then analyzing them to determine needed resources and a project management plan for the rest of the semester. Towards this goal, you will be required to submit the following by the due date:
-
-* [Executive Project Summary](#executive-project-summary) - What are you doing and why?
-  - Goals and Objectives
-  - Merit of the Project
-* [Application requirements](#application-requirements) - What does your app/product do?
-  - User stories
-  - Misuser stories
-* [Design](#design) - How is the app going to be designed?
-  - Draw an architecture diagram of your proposed app
-  - Identify significant design challenges
-* [Security Analysis](#security-analysis) - What could go wrong and where might it affect your application?
-
-**All materials will be submitted on GitHub, be sure to slack message me with your GitHub Repo link.**
+# Weather Forecast & Notification Application
 
 ## Executive Summary
 Are you someone that never watches tv or the news at night and the following day have no idea on how to dress for the weather? The weather app has got your back. Just open it up and it will give you an up to date temperature reading and forecast for the day. You can also look ahead and see what they week will be like as well. The applciation grabs the user location to always give the most accurate results at the time. You will always be dressed properly for the day.
 
 ## Project Goals
 * Use GPS to give accurate results to the user 
-* Uses Weather API to gather weather data for the user
+* Uses OpenWeather API to gather weather data for the user
 * Allows for real time weather updates
 * Allow for Weather Alerts to notify user
 * Provide user with weather maps
+* Notify user through email notification of weather forecast reminders
+* Privide user temperature data of the android device being used
 
 ## User Stories
 As a **standard user**, I want to **view current temperature and condition** so I can **see what appearal is required for the day**.  

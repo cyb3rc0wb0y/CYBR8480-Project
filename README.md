@@ -23,6 +23,8 @@ Are you someone that never watches tv or the news at night and the following day
 * Use GPS to give accurate results to the user 
 * Uses Weather API to gather weather data for the user
 * Allows for real time weather updates
+* Allow for Weather Alerts to notify user
+* Provide user with weather maps
 
 ## User Stories
 As a **standard user**, I want to **view current temperature and condition** so I can **see what appearal is required for the day**.  
@@ -30,6 +32,18 @@ As a **standard user**, I want to **view current temperature and condition** so 
 * App grabs user location
 * App is able to interpret data to send off for correct data
 * App displays the current temperature and conditions
+
+As a **standard user**, I want to **something** so I can **something**.  
+**Acceptance Criteria:**
+* bulltin 1
+* bulltin 2
+* bulltin 3
+
+As a **standard user**, I want to **something** so I can **something**.  
+**Acceptance Criteria:**
+* bulltin 1
+* bulltin 2
+* bulltin 3
 
 ## Misuser stories
 Also think about and define 2 misuser stories. Misuser stories are nothing more than user stories, except for users seeking to abuse your app. Use the same format as above, except replace user with misuser and use the ```goal``` to define the misuse goal. I.e.

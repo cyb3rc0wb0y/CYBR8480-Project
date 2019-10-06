@@ -24,24 +24,12 @@ Are you someone that never watches tv or the news at night and the following day
 * Uses Weather API to gather weather data for the user
 * Allows for real time weather updates
 
-## User stories
-For milestone 1, you should define the 3 most important user stories for your product. Pay careful attention to structure the user stories as we discussed in CYBR8470. Specifically, submit your user stories using the following template. Include them directly on, or as a link from, your GitHub repo README.md file.
-
-As a **user/role**, I want to **goal** so I can **rationale**.
-
-For each user story, also define acceptance criteria.
-Your acceptance criteria should define the set of things required to understand when you are done with the user story.
-
-You can make use of the following markdown syntax to embed your user stories in your README.md file:
-
-```markdown
-## User stories
-As a **user/role**, I want to **goal** so I can **rationale**.
+## User Stories
+As a **standard user**, I want to **view current temperature and condition** so I can **see what appearal is required for the day**.  
 **Acceptance Criteria:**
-* Insert criteria 1 here
-* Insert criteria 2 here
-* etc
-```
+* App grabs user location
+* App is able to interpret data to send off for correct data
+* App displays the current temperature and conditions
 
 ## Misuser stories
 Also think about and define 2 misuser stories. Misuser stories are nothing more than user stories, except for users seeking to abuse your app. Use the same format as above, except replace user with misuser and use the ```goal``` to define the misuse goal. I.e.

@@ -80,6 +80,8 @@ When selected by the user, the Application initiates the email message notificat
 ## Security Analysis
 The Weather Forecast application interfaces with a variety of other softwares and hardwares which introduces possible areas that can be exploited by a malicious user. In addition, the application requires user configuration of the settings and thrid-party API accounts which could be abused to inject code.
 
+![Security_Analysis](https://user-images.githubusercontent.com/25576618/66277459-8d822100-e864-11e9-8523-2e0b996b229a.png)
+
 | Component name | Category of vulnerability | Issue Description | Mitigation |
 |----------------|---------------------------|-------------------|------------|
 | User Configuration and Settings | Code Injection | This component exposes an interface to integrated webviews that might allow malicious javascript to read and modify protected data on the component that it shouldn't have access it. | All user input should be sanitized and validated before stored or submitted to APIs to prevent any malicious code injections.|

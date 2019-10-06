@@ -42,32 +42,22 @@ As a **weather forecast app misuser**, I want to **exploit the OpenWeather API r
 
 * Using the OpenWeather API the app can securely connect to the API service with a key ensuring that the connection is secure and validated.
 
-## Design
+## High Level Design
 ![High_Level_Diagram](https://user-images.githubusercontent.com/25576618/66276595-66265680-e85a-11e9-97b8-acc22039a30e.png)
 
-```markdown
-## High Level Design
-![Tooltip for visually disabled](./path-to-image-file.imgextension)
-
 ## Component List
-### Component 1 Name here
-Component description here
 
-#### Sub-component 1.1 name here
-Sub component description here
+### Mobile Android Device [Hardware]
 
-#### Sub-component 1.2 name here
-Sub component description here
+### Weather Forecast Application [Software]
 
-### Component 2 Name here
-Component 2 description here
+#### Temperature Senser Connector
 
-#### Sub-component 2.1 name here
-Sub component description here
+#### OpenWeather Connector
 
-#### Sub-component 2.2 name here
-Sub component description here
-```
+#### If This Then That Connector
+
+#### User Settings
 
 ## Security Analysis
 As you know, there are many problems that can arise in the design and implementation of an app. You should analyze your design, while considering your misuse cases, to identify problem points where security challenges might exist.

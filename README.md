@@ -1,5 +1,7 @@
 # Weather Forecast & Notification Application
 
+**Authors:** Talon Flynn, Jeffrey Smith
+
 ## Executive Summary
 Are you someone that never watches tv or the news at night and the following day have no idea on how to dress for the weather? The weather app has got your back. Just open it up and it will give you an up to date temperature reading and forecast for the day. You can also look ahead and see what they week will be like as well. The application grabs the user location to always give the most accurate results at the time. You will always be dressed properly for the day.
 

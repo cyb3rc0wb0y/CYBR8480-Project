@@ -33,11 +33,11 @@ As a **standard user**, I want to **view current temperature and condition** so 
 * App is able to interpret data to send off for correct data
 * App displays the current temperature and conditions
 
-As a **standard user**, I want to **something** so I can **something**.  
+As a **standard user**, I want to **receive an email notification** so I can **view the weather forecast outside the application**.  
 **Acceptance Criteria:**
-* bulltin 1
-* bulltin 2
-* bulltin 3
+* App receives weather forecast from Weather API
+* App is able to interpret data to determine the correct forecast
+* App is able to send an email notification when the user selects the notification option
 
 As a **standard user**, I want to **something** so I can **something**.  
 **Acceptance Criteria:**

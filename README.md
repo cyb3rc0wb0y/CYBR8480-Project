@@ -16,8 +16,8 @@ This project milestone tasks you with developing and expressing a project idea, 
 
 **All materials will be submitted on GitHub, be sure to slack message me with your GitHub Repo link.**
 
-## Executive Project Summary
-An executive summary should be evocative. It should capture a reader and make them want to be a part of your idea. In this milestone you will write an executive summary that defines the goals and objectives of your project in language that is easily readable and mental-image evoking. I (or anyone else) should be able to read your executive summary and instantly know a) what you are doing and b) why it is important. Executive summaries should be exciting and interesting. It is the first (and likely the only) chance for you to engage your reader and, in a real world setting, would determine if your product gets funded. An executive summary does not need technical detail to describe interesting functionality. You should mention your product by name without using phrases such as "the team", "the class", "the instructor", "project 2" etc.
+## Executive Summary
+Are you someone that never watches tv or the news at night and the following day have no idea on how to dress for the weather? The weather app has got your back. Just open it up and it will give you an up to date temperature reading and forecast for the day. You can also look ahead and see what they week will be like as well. The applciation grabs the user location to always give the most accurate results at the time. You will always be dressed properly for the day.
 
 ### Submission materials
 You should submit a summary document (in markdown format) on your GitHub project repo. Call the file README.md and place it in the top-level directory of your GitHub project.

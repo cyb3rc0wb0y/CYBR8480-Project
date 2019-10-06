@@ -43,20 +43,7 @@ As a **weather forecast app misuser**, I want to **exploit the OpenWeather API r
 * Using the OpenWeather API the app can securely connect to the API service with a key ensuring that the connection is secure and validated.
 
 ## Design
-Once you have a set of requirements, the next step is to think about how you want to create an application that meets those demands. This is design. In Milestone 1 you will come up with a design that meets your project requirements. Your design should be kept to the component/service level. A design is only as effective as it is communicable. If your design is overcomplicated or difficult to describe, then it means that you may have a poor design. What I want to see for Milestone 1 is that you have a clear picture in mind for how you will make an app to meet your requirements.
-
-**Remember that you only have roughly 1.5-2 months to work on your product, so keep scope in mind**
-
-### Submission materials
-You should **draw a picture of your overall application**. You may use any architecture style you wish, but I would recommend c4, read more at [https://c4model.com/](https://c4model.com/). The picture should identify the core components of your design and how they are connected. At a high level, there are three types of components you may need: `web services`, `mobile app(s)`, and `hardware devices` (e.g. IoT hardware). Web services are tools that (typically) deliver data to apps and maintain state across user sessions. They often also allow you to integrate your apps and devices with other apps, devices, and services. Mobile apps are what we have mainly focused on so far in this course. Hardware devices are sensors and actuators that sense or impact the world around them. Connections between components may exist over known protocols (bluetooth, http, etc) or may be internal to an app (e.g. function -> function in Android).
-
-Your design should identify these high level components, but should also drill down to identify what each of these high level components will do - for instance, your hardware device might need to read temperature, your mobile app may need to be able to login to a webservice, pull down the temperature data from Omaha, and then compare it to the temperature measured by your hardware device and create a graph of temperature over time. This might require several subcomponents. **Your design should list them out, writing 1-2 sentences to describe each one**.
-
-**TL;DR**
-1) A picture that identifies components and their connections
-2) a list of components with 1-2 sentences defining each one
-
-You can make use of the following markdown syntax to embed your design in your README.md file:
+![High_Level_Diagram](https://user-images.githubusercontent.com/25576618/66276595-66265680-e85a-11e9-97b8-acc22039a30e.png)
 
 ```markdown
 ## High Level Design

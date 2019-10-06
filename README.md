@@ -39,22 +39,22 @@ As a **standard user**, I want to **receive an email notification** so I can **v
 * App is able to interpret data to determine the correct forecast
 * App is able to send an email notification when the user selects the notification option
 
-As a **standard user**, I want to **something** so I can **something**.  
+As a **standard user**, I want to **view the phones current temperature** so I can **determine if the phone needs to be stored elsewhere**.  
 **Acceptance Criteria:**
-* bulltin 1
-* bulltin 2
-* bulltin 3
+* App receives data from phone's sensor
+* App is able to interpret data to be displayed to screen
+* App is able to correctly render the sensers data to the user
 
 ## Misuser stories
 As a **weather forecast app misuser**, I want to **exploit the email notification feature** so I can **notify unauthorized individuals of the forecast**.
 **Mitigations:**
 
-Using the If This Then That (IFTTT) WebHook and Email Notification engines the app can securely connect to the IFTTT service to ensure notifications cannot be redirected.
+* Using the If This Then That (IFTTT) WebHook and Email Notification engines the app can securely connect to the IFTTT service to ensure notifications cannot be redirected.
 
 As a **weather forecast app misuser**, I want to **exploit the OpenWeather API request** so I can **misrepresent the users location (long/lat)**.
 **Mitigations:**
 
-Using the OpenWeather API the app can securely connect to the API service with a key ensuring that the connection is secure and validated.
+* Using the OpenWeather API the app can securely connect to the API service with a key ensuring that the connection is secure and validated.
 
 ## Design
 Once you have a set of requirements, the next step is to think about how you want to create an application that meets those demands. This is design. In Milestone 1 you will come up with a design that meets your project requirements. Your design should be kept to the component/service level. A design is only as effective as it is communicable. If your design is overcomplicated or difficult to describe, then it means that you may have a poor design. What I want to see for Milestone 1 is that you have a clear picture in mind for how you will make an app to meet your requirements.

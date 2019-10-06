@@ -27,8 +27,7 @@ Are you someone that never watches tv or the news at night and the following day
 ## Application requirements
 Requirements are extremely important for conducting a successful project. Collecting requirements about an application means understanding what your end user is going to do with the product. To understand requirements we often define user stories and use cases to encapsulate and represent behavior.
 
-### Submission materials
-#### User stories
+## User stories
 For milestone 1, you should define the 3 most important user stories for your product. Pay careful attention to structure the user stories as we discussed in CYBR8470. Specifically, submit your user stories using the following template. Include them directly on, or as a link from, your GitHub repo README.md file.
 
 As a **user/role**, I want to **goal** so I can **rationale**.
@@ -47,7 +46,7 @@ As a **user/role**, I want to **goal** so I can **rationale**.
 * etc
 ```
 
-#### Misuser stories
+## Misuser stories
 Also think about and define 2 misuser stories. Misuser stories are nothing more than user stories, except for users seeking to abuse your app. Use the same format as above, except replace user with misuser and use the ```goal``` to define the misuse goal. I.e.
 
 As a **misuser**, I want to **misuse goal** so I can **bad rationale**.

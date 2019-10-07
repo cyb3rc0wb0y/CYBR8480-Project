@@ -82,7 +82,7 @@ When selected by the user, the Application initiates the email message notificat
 ## Security Analysis
 The Weather Forecast application interfaces with a variety of other softwares and hardwares which introduces possible areas that can be exploited by a malicious user. In addition, the application requires user configuration of the settings and thrid-party API accounts which could be abused to inject code.
 
-![Security_Analysis](https://user-images.githubusercontent.com/25576618/66277459-8d822100-e864-11e9-8523-2e0b996b229a.png)
+![Security_Analysis2](https://user-images.githubusercontent.com/25576618/66279965-f4f69b80-e879-11e9-8dbf-8d8ae70fc77a.png)
 
 | Component name | Category of vulnerability | Issue Description | Mitigation |
 |----------------|---------------------------|-------------------|------------|

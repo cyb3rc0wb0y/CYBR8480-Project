@@ -10,13 +10,13 @@
         android:id="@+id/buttonOpenWeather"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/retrieve_weather_forcast"
+        android:text="@string/retrieve_weather_forecast"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.112" />
+        app:layout_constraintVertical_bias="0.269" />
 
     <Button
         android:id="@+id/buttonPhoneTemp"
@@ -28,7 +28,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.278" />
+        app:layout_constraintVertical_bias="0.446" />
 
     <Button
         android:id="@+id/buttonEmail"
@@ -37,9 +37,19 @@
         android:text="@string/send_email_notification"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonPhoneTemp"
-        app:layout_constraintVertical_bias="0.17" />
+        app:layout_constraintVertical_bias="0.245" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/weather_forecast_notification"
+        app:layout_constraintBottom_toTopOf="@+id/buttonOpenWeather"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

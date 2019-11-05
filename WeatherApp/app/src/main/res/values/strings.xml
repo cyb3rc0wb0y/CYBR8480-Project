@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Weather App</string>
+    <string name="retrieve_weather_forcast">Retrieve Weather Forcast</string>
+    <string name="retrieve_phone_temp">Retrieve Phone Temp</string>
+    <string name="send_email_notification">Send Email Notification</string>
 </resources>

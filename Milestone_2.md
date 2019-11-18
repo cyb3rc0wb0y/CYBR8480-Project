@@ -13,6 +13,31 @@ This project milestone tasks you with building a prototype application that addr
 ## User story realization
 In this milestone, you will focus on drilling into actually realizing (i.e. completing) your user stories. This means actually start coding and working to develop the features to support the stories. As you do this, keep basic documentation to connect your work to the ideas that created it. Make sure to update your architectural diagrams if anything changes from your design.
 
+### User Stories
+As a **standard user**, I want to **view current temperature and condition** so I can **see what apparel is required for the day**.  
+**Acceptance Criteria:**
+* App grabs user location
+* App is able to interpret data to send off for correct data
+* App displays the current temperature and conditions
+
+*Relization add here
+
+As a **standard user**, I want to **receive an email notification** so I can **view the weather forecast outside the application**.  
+**Acceptance Criteria:**
+* App receives weather forecast from Weather API
+* App is able to interpret data to determine the correct forecast
+* App is able to send an email notification when the user selects the notification option
+
+*Relization add here
+
+As a **standard user**, I want to **view the phones current temperature** so I can **determine if the phone needs to be stored elsewhere**.  
+**Acceptance Criteria:**
+* App receives data from phone's sensor
+* App is able to interpret data to be displayed to screen
+* App is able to correctly render the sensors data to the user
+
+*Relization add here
+
 ### Submission materials
 You should prepare a prototype application/product that demonstrates the three selected user stories. The prototype should include an IoT component and a mobile app. The app may be hybrid or native. The IoT component should use Bluetooth or another wireless protocol (such as RFID or Wi-Fi) to communicate. All code should be properly documented - with non-trivial code (such as methods and algorithms) briefly explained in-line using appropriate comments. Update your component descriptions associated with the architecture diagram with appropriate references in the code (where applicable). The last element of submission materials include a demo-ready compiled app that can demonstrate some basic functionality.
 

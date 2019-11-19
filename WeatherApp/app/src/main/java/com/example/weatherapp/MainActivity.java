@@ -2,7 +2,6 @@ package com.example.weatherapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.DownloadManager;
 import android.os.Bundle;
 import android.widget.Button;
 import android.view.View;

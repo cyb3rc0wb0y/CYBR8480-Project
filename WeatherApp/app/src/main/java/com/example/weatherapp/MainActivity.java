@@ -32,12 +32,34 @@ public class MainActivity extends AppCompatActivity {
                 // Code here executes on main thread after user presses button
 
                 // Volley Request Documentation: https://developer.android.com/training/volley/simple
+                final TextView textView = (TextView) findViewById(R.id.text);
+                // Instantiate the RequestQueue.
+                RequestQueue queue = Volley.newRequestQueue(this);
+                String url ="http://api.openweathermap.org/data/2.5/forecast?id=524901&APPID={08e7577504c64f1e0ec2f293f880fea5}";
+                // Request a string response from the provided URL.
+                StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
+                        new Response.Listener<String>() {
+                            @Override
+                            public void onResponse(String response) {
+                                // Display the first 500 characters of the response string.
+                                textView.setText("Response is: "+ response.substring(0,500));
+                            }
+                        }, new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        textView.setText("That didn't work!");
+                    }
+                });
+                // Add the request to the RequestQueue.
+                queue.add(stringRequest);
             }
         });
 
         final Button buttonPT = findViewById(R.id.buttonPhoneTemp);
         buttonPT.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                // Code here executes on main thread after user presses button
+
                 // Sensor Manager Documentation: https://developer.android.com/reference/android/hardware/SensorManager.html
 
                 // Temp Sensor Documentation: https://developer.android.com/reference/android/hardware/Sensor.html#STRING_TYPE_AMBIENT_TEMPERATURE
@@ -53,12 +75,11 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // Code here executes on main thread after user presses button
 
+                // Volley Request Documentation: https://developer.android.com/training/volley/simple
                 final TextView textView = (TextView) findViewById(R.id.text);
-
                 // Instantiate the RequestQueue.
                 RequestQueue queue = Volley.newRequestQueue(this);
                 String url ="https://maker.ifttt.com/trigger/{weather_forecast}/with/key/m5E5SE0CCPXfhFVZ5O7e2Dbm1FxN_9MIJqJAQzvryC";
-
                 // Request a string response from the provided URL.
                 StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
                         new Response.Listener<String>() {
@@ -73,7 +94,6 @@ public class MainActivity extends AppCompatActivity {
                         textView.setText("That didn't work!");
                     }
                 });
-
                 // Add the request to the RequestQueue.
                 queue.add(stringRequest);
 

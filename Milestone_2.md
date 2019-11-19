@@ -30,11 +30,8 @@ As a **standard user**, I want to **view the phones current temperature** so I c
 *Relization add here
 
 ### Submission materials
-You should prepare a prototype application/product that demonstrates the three selected user stories. The prototype should include an IoT component and a mobile app. The app may be hybrid or native. The IoT component should use Bluetooth or another wireless protocol (such as RFID or Wi-Fi) to communicate. All code should be properly documented - with non-trivial code (such as methods and algorithms) briefly explained in-line using appropriate comments. Update your component descriptions associated with the architecture diagram with appropriate references in the code (where applicable). The last element of submission materials include a demo-ready compiled app that can demonstrate some basic functionality.
+You should prepare a prototype application/product that demonstrates the three selected user stories. The app may be hybrid or native. The IoT component should use Bluetooth or another wireless protocol (such as RFID or Wi-Fi) to communicate. All code should be properly documented - with non-trivial code (such as methods and algorithms) briefly explained in-line using appropriate comments. Update your component descriptions associated with the architecture diagram with appropriate references in the code (where applicable). The last element of submission materials include a demo-ready compiled app that can demonstrate some basic functionality.
 
 ## Demo (Participation)
-You must demo your app for Dr. Hale. You should show off the features you've realized so far, as well as speak to the current design problems you are encountering and how you will surmount them.
 
-| | Meets expectations (33-40) | Some Issues (25-32) | Does not meet expectations (0-24) |
-|---|---|---|---|
-| Prototype Demo* | The product is successfully demoed for Dr. Hale and the class. The individual/team addresses and handles questions well. | The demo partially works, but there are some significant issues. | Many significant issues or non-functional prototype.|
+Screenshots of the App that show the three user stories.

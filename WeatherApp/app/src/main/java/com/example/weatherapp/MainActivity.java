@@ -7,6 +7,9 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
+    // TYPE_AMBIENT_TEMPERATURE
+    public static final int TYPE_AMBIENT_TEMPERATURE= 13;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         final Button buttonPT = findViewById(R.id.buttonPhoneTemp);
         buttonPT.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                // Code here executes on main thread after user presses button
+                final String STRING_TYPE_AMBIENT_TEMPERATURE = "android.sensor.ambient_temperature";
             }
         });
 
@@ -34,4 +37,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
+
+
 }

@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 import android.view.View;
+import android.widget.Toast;
+import android.hardware.Sensor;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
         final Button buttonPT = findViewById(R.id.buttonPhoneTemp);
         buttonPT.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                final String STRING_TYPE_AMBIENT_TEMPERATURE = "android.sensor.ambient_temperature";
+                final int TYPE_AMBIENT_TEMPERATURE = Sensor.TYPE_AMBIENT_TEMPERATURE;
+                Toast.makeText(getApplicationContext(), TYPE_AMBIENT_TEMPERATURE, Toast.LENGTH_LONG).show();
             }
         });
 

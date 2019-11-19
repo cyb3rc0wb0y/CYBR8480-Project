@@ -11,7 +11,7 @@ import android.hardware.Sensor;
 public class MainActivity extends AppCompatActivity {
 
     // TYPE_AMBIENT_TEMPERATURE
-    public static final int TYPE_AMBIENT_TEMPERATURE= 13;
+    // public static final int TYPE_AMBIENT_TEMPERATURE= 13;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,8 +28,8 @@ public class MainActivity extends AppCompatActivity {
         final Button buttonPT = findViewById(R.id.buttonPhoneTemp);
         buttonPT.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                final int TYPE_AMBIENT_TEMPERATURE = Sensor.TYPE_AMBIENT_TEMPERATURE;
-                Toast.makeText(getApplicationContext(), TYPE_AMBIENT_TEMPERATURE, Toast.LENGTH_LONG).show();
+                final String STRING_TYPE_AMBIENT_TEMPERATURE = Sensor.STRING_TYPE_AMBIENT_TEMPERATURE;
+                Toast.makeText(getApplicationContext(), STRING_TYPE_AMBIENT_TEMPERATURE, Toast.LENGTH_LONG).show();
             }
         });
 

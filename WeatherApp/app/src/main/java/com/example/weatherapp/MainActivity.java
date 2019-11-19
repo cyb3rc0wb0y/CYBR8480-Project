@@ -10,9 +10,6 @@ import android.hardware.Sensor;
 
 public class MainActivity extends AppCompatActivity {
 
-    // TYPE_AMBIENT_TEMPERATURE
-    // public static final int TYPE_AMBIENT_TEMPERATURE= 13;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

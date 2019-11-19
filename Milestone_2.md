@@ -39,4 +39,4 @@ Set app to forground so marked up above and then it wont be killed. Android will
 
 Screenshots of the App that show the three user stories.
 
-[![solarized dualmode](https://https://github.com/cyb3rc0wb0y/CYBR8480-Project/blob/master/Images/WeatherAppMainPage.png)](#features)
+[![Main Page](https://https://github.com/cyb3rc0wb0y/CYBR8480-Project/blob/master/Images/WeatherAppMainPage.png)](#features)

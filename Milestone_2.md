@@ -33,6 +33,7 @@ This task is a bit tricky because the phone has to allow are app to run in the b
 Add screenshot
 Document code
 Finish updating the sheet.
+Set app to forground so marked up above and then it wont be killed. Android will ingore system process when you go into a load memory state. So then the app will not be killed.
 
 ## Demo (Participation)
 

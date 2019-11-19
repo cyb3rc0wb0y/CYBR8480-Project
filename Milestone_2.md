@@ -39,4 +39,5 @@ Set app to forground so marked up above and then it wont be killed. Android will
 
 Screenshots of the App that show the three user stories.
 
+From the first image of the main app page you can see you have three choices. Get the weather outside, get phone temperature, or send email notfication from phone. This meets are first and second user stories. You can view weather from your phone or send the notfication to your email if you want to read later.
 ![Main Page](Images/WeatherAppMainPage.png)

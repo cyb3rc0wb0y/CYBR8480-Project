@@ -1,12 +1,7 @@
 # CYBR 8480 Project Milestone 2: Prototype development
 
 ## Overview
-This project milestone tasks you with building a prototype application that addresses your top user stories. This means you will be creating features to support and realize your user stories. The milestone also tasks you with generating relevant documentation associated with design and implementation of your app. Towards this goal, you will be required to submit the following by the due date:
-
-* [User story realization](#user-story-realization) - Document and describe what was done.
-  - Identify tasks achieved in this product increment
-  - Bind tasks, code artifacts, and documentation together
-* [Demo](#demo) - Demo and discuss your milestone 2 work with Dr. Hale 
+Project milestone 2 shows the progress we have made towards developing the app. We will go over the realization that our apps meets are user stories from the first milestone. We will then show some information on the app and what has been done to the application itself. We will also make sure the code has been properly documented so anyone can read it with ease. There will also be a few screen-shot that shows how the app is coming along. We will also show issues we have ran into.
 
 **All materials will be submitted on GitHub, be sure to post your slides and a link to your GitHub Repo on canvas.**
 

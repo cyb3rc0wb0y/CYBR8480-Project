@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 final TextView textView = (TextView) findViewById(R.id.text);
                 // Instantiate the RequestQueue.
                 RequestQueue queue = Volley.newRequestQueue(this);
-                String url ="http://api.openweathermap.org/data/2.5/forecast?id=524901&APPID={08e7577504c64f1e0ec2f293f880fea5}";
+                String url ="http://api.openweathermap.org/data/2.5/forecast?id=5074472&APPID=08e7577504c64f1e0ec2f293f880fea5";
                 // Request a string response from the provided URL.
                 StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
                         new Response.Listener<String>() {

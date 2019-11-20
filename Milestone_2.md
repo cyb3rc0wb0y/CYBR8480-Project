@@ -39,11 +39,14 @@ Set app to forground so marked up above and then it wont be killed. Android will
 
 Screenshots of the App that show the three user stories.
 
-From the first image of the main app page you can see you have three choices. Get the weather outside, get phone temperature, or send email notfication from phone. This meets are first and second user stories. You can view weather from your phone or send the notfication to your email if you want to read later.
+* From the first image of the main app page you can see you have three choices. Get the weather outside, get phone temperature, or send email notfication from phone. This meets are first and second user stories. You can view weather from your phone or send the notfication to your email if you want to read later.
 
 ![Main Page](Images/WeatherAppMainPage.png)
 
-When the send email notification is selected, a webhook will be triggered generating an email notification as shown below.
+* When the send email notification is selected, a webhook will be triggered generating an email notification as shown below.
 
 <img width="923" alt="Screen Shot 2019-11-19 at 8 33 46 PM" src="https://user-images.githubusercontent.com/25576618/69204270-0800ba80-0b0c-11ea-9e68-2a104a295a7b.png">
 
+* To gather the required data for the weather forecast app, OpenWeatherAPI is used. When the button on the app is selected it submits a GET to their API and returns the following data for the app to parse through.
+
+<img width="1664" alt="Screen Shot 2019-11-19 at 8 39 32 PM" src="https://user-images.githubusercontent.com/25576618/69204545-c6bcda80-0b0c-11ea-807f-88ed7f9fbbaf.png">

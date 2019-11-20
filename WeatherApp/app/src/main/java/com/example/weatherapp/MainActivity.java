@@ -60,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
     public void openWeatherAPI() {
         // Volley Request Documentation: https://developer.android.com/training/volley/simple
         final TextView textView = (TextView) findViewById(R.id.text);

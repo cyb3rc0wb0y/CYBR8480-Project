@@ -50,3 +50,8 @@ Screenshots of the App that show the three user stories.
 * To gather the required data for the weather forecast app, OpenWeatherAPI is used. When the button on the app is selected it submits a GET to their API and returns the following data for the app to parse through.
 
 <img width="1664" alt="Screen Shot 2019-11-19 at 8 39 32 PM" src="https://user-images.githubusercontent.com/25576618/69204545-c6bcda80-0b0c-11ea-807f-88ed7f9fbbaf.png">
+
+* To meet the needs of the thrid user story, the option to read the phones temperature can be selected and the app will process the request while displaying a toast message while calculating the temperature as shown below.
+
+<img width="413" alt="Screen Shot 2019-11-19 at 9 00 16 PM" src="https://user-images.githubusercontent.com/25576618/69205488-b78b5c00-0b0f-11ea-8b3a-cad0019c1e82.png">
+

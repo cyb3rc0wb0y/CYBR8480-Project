@@ -29,28 +29,7 @@ public class MainActivity extends AppCompatActivity {
         buttonOW.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Code here executes on main thread after user presses button
-
-                // Volley Request Documentation: https://developer.android.com/training/volley/simple
-                final TextView textView = (TextView) findViewById(R.id.text);
-                // Instantiate the RequestQueue.
-                RequestQueue queue = Volley.newRequestQueue(this);
-                String url ="http://api.openweathermap.org/data/2.5/forecast?id=5074472&APPID=08e7577504c64f1e0ec2f293f880fea5";
-                // Request a string response from the provided URL.
-                StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
-                        new Response.Listener<String>() {
-                            @Override
-                            public void onResponse(String response) {
-                                // Display the first 500 characters of the response string.
-                                textView.setText("Response is: "+ response.substring(0,500));
-                            }
-                        }, new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        textView.setText("That didn't work!");
-                    }
-                });
-                // Add the request to the RequestQueue.
-                queue.add(stringRequest);
+                openWeatherAPI();
             }
         });
 
@@ -65,7 +44,9 @@ public class MainActivity extends AppCompatActivity {
                 final String STRING_TYPE_AMBIENT_TEMPERATURE = Sensor.STRING_TYPE_AMBIENT_TEMPERATURE;
 
                 // Toast Documentation: https://developer.android.com/guide/topics/ui/notifiers/toasts
-                Toast.makeText(getApplicationContext(), STRING_TYPE_AMBIENT_TEMPERATURE, Toast.LENGTH_LONG).show();
+                // Toast.makeText(getApplicationContext(), STRING_TYPE_AMBIENT_TEMPERATURE, Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Retrieving Phone Temp...", Toast.LENGTH_LONG).show();
+
             }
         });
 
@@ -73,34 +54,58 @@ public class MainActivity extends AppCompatActivity {
         buttonE.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Code here executes on main thread after user presses button
-
-                // Volley Request Documentation: https://developer.android.com/training/volley/simple
-                final TextView textView = (TextView) findViewById(R.id.text);
-                // Instantiate the RequestQueue.
-                RequestQueue queue = Volley.newRequestQueue(this);
-                String url ="https://maker.ifttt.com/trigger/{weather_forecast}/with/key/m5E5SE0CCPXfhFVZ5O7e2Dbm1FxN_9MIJqJAQzvryC";
-                // Request a string response from the provided URL.
-                StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
-                        new Response.Listener<String>() {
-                            @Override
-                            public void onResponse(String response) {
-                                // Display the first 500 characters of the response string.
-                                textView.setText("Response is: "+ response.substring(0,500));
-                            }
-                        }, new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        textView.setText("That didn't work!");
-                    }
-                });
-                // Add the request to the RequestQueue.
-                queue.add(stringRequest);
-
+                ifttt();
             }
         });
 
     }
 
+    public void openWeatherAPI() {
+        // Volley Request Documentation: https://developer.android.com/training/volley/simple
+        final TextView textView = (TextView) findViewById(R.id.text);
+        // Instantiate the RequestQueue.
+        RequestQueue queue = Volley.newRequestQueue(this);
+        String url ="http://api.openweathermap.org/data/2.5/forecast?id=5074472&APPID=08e7577504c64f1e0ec2f293f880fea5";
+        // Request a string response from the provided URL.
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        // Display the first 500 characters of the response string.
+                        textView.setText("Response is: "+ response.substring(0,500));
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                textView.setText("That didn't work!");
+            }
+        });
+        // Add the request to the RequestQueue.
+        queue.add(stringRequest);
+    }
 
+    public void ifttt() {
+        // Volley Request Documentation: https://developer.android.com/training/volley/simple
+        final TextView textView = (TextView) findViewById(R.id.text);
+        // Instantiate the RequestQueue.
+        RequestQueue queue = Volley.newRequestQueue(this);
+        String url ="https://maker.ifttt.com/trigger/{weather_forecast}/with/key/m5E5SE0CCPXfhFVZ5O7e2Dbm1FxN_9MIJqJAQzvryC";
+        // Request a string response from the provided URL.
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        // Display the first 500 characters of the response string.
+                        textView.setText("Response is: "+ response.substring(0,500));
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                textView.setText("That didn't work!");
+            }
+        });
+        // Add the request to the RequestQueue.
+        queue.add(stringRequest);
+    }
 
 }

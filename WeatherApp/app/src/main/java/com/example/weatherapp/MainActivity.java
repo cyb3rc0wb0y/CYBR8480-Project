@@ -2,6 +2,7 @@ package com.example.weatherapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.view.View;
@@ -13,8 +14,12 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -60,8 +65,30 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
     public void openWeatherAPI() {
+        // Volley Request Documentation: https://developer.android.com/training/volley/simple
+        final TextView textView = (TextView) findViewById(R.id.text);
+        String url = "http://api.openweathermap.org/data/2.5/forecast?id=5074472&APPID=08e7577504c64f1e0ec2f293f880fea5";
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest
+                (Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        TextView textView = (TextView) findViewById(R.id.textView1);
+                        textView.setText(response.toString());
+                        //textView.setText("Response: " + response.toString());
+                    }
+                }, new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        textView.setText("That didn't work!");
+
+                    }
+                });
+        // Access the RequestQueue through your singleton class.
+        MySingleton.getInstance(this).addToRequestQueue(jsonObjectRequest);
+    }
+
+    public void openWeatherAPI2() {
         // Volley Request Documentation: https://developer.android.com/training/volley/simple
         final TextView textView = (TextView) findViewById(R.id.text);
         // Instantiate the RequestQueue.

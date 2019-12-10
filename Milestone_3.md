@@ -13,9 +13,10 @@ Download the repository and load it into Android Studio and Android Studios will
 The code can be grabbed from the github repository and compiled by anyone.
 
 #### Hardware/Software Requirements
+Software Requirements - Users need Android Studio and a phone that run Android. Android 4: Ice Cream Sandwich and up. We did not want to go back and add all versions becasuse it would take to much space.
 
+Hardware Requirements - Just a Android Device with Android 4: Ice Cream Sandwich or newer.
 
- * Create a ```hardware/software requirements``` section in your github repository and list the hardware components, software, and other technology required to make your app work.
  * Create ```installation``` and ```getting started``` instructions using markdown in your repository to detail what an end-user must do to setup and use your product.
 
 #### Grading Criteria

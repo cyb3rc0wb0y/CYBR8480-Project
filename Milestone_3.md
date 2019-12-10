@@ -22,20 +22,7 @@ Git Clone https://github.com/cyb3rc0wb0y/CYBR8480-Project.git (in directory of y
 Open Android Studio
 File -> Open -> Location of Git Repository
 Compile Project / Run App
-- If errors follow android studio prereqs that it suggest should resolve most errors.
+- If errors occur, follow android studio prereqs. It will suggest the library that is needed to resolve most errors.
 Start Emulator or move APK to a Physical Phone
 
-#### Grading Criteria
-| | Meets expectations (9-10) | Some Issues (6-8) | Does not meet expectations (0-5)|
-|---|---|---|---|
-|Hardware/Software Requirements| Includes a list of hardware and software requirements necessary for the instructions and usage of the product. | N/A | Does not list hardware/software requirements |
-
-| | Meets expectations (40-50) | Some Issues (25-39) | Does not meet expectations (0-24)|
-|---|---|---|---|
-|Installation Directions| Clear, complete instructions allow the would-be user to install and build your code.|Directions are missing elements, unclear, and/or incomplete. |Many issues with instructions not working or directions are overly incomplete|
-|Getting Started Directions|Clear, complete, and concise getting starting directions are provided to show would-be users how to use your app and product.|Getting started directions are not clear. It is not obvious how to use your app/product.|Minimal or no attempt to generate getting started documentation.|
-
-**Total 110 points.**
-
-### Presentation
-You will be expected to present your Final Milestone to the class on our final day. You will be expected to Demo your final product.
+### Walkthrough

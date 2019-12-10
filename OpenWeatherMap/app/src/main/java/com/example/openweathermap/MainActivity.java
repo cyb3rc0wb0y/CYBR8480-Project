@@ -95,6 +95,10 @@ public class MainActivity extends AppCompatActivity {
 
         protected String doInBackground(String... args) {
             String response = HttpRequest.excuteGet("https://api.openweathermap.org/data/2.5/weather?q=" + CITY + "&units=imperial&appid=" + API);
+
+
+
+
             return response;
         }
 
@@ -129,7 +133,8 @@ public class MainActivity extends AppCompatActivity {
 
                 String webhook = "https://maker.ifttt.com/trigger/weather_forecast/with/key/oTQhwYJ4LQ1q65WjFyHCLx8YX98NYkHlBRaIrOGw5Pr?value1=" + hookTemp + "&value2=" + hookMin + "&value3=" + hookMax;
                 Toast.makeText(getApplicationContext(), "Sending Email Notification...", Toast.LENGTH_LONG).show();
-                HttpRequest.excuteGet(webhook);
+                String whResponse = HttpRequest.excuteGet(webhook);
+                //Toast.makeText(getApplicationContext(), whResponse, Toast.LENGTH_LONG).show();
 
                 //String test = HttpRequest.excuteGet("https://maker.ifttt.com/trigger/weather_forecast/with/key/oTQhwYJ4LQ1q65WjFyHCLx8YX98NYkHlBRaIrOGw5Pr?value1=" + hookTemp + "&value2=" + hookMin + "&value3=" + hookMax);
 
@@ -155,7 +160,6 @@ public class MainActivity extends AppCompatActivity {
                 findViewById(R.id.loader).setVisibility(View.GONE);
                 findViewById(R.id.errorText).setVisibility(View.VISIBLE);
             }
-
         }
     }
 }

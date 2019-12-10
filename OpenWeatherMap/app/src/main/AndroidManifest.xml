@@ -21,6 +21,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity$TempSensorActivity" />
+        <activity android:name=".MainActivity$SensorActivity" />
     </application>
 <!-- Source Code Cite: https://www.androdocs.com/java/creating-an-android-weather-app-using-java.html -->
 </manifest>

@@ -26,7 +26,9 @@ Compile Project / Run App
 Start Emulator or move APK to a Physical Phone
 
 ### Walkthrough
-
+When you first start the app it will send an email to the users specfied email.
 ![Main Page](Images/sendingemail.PNG)
-![Main Page](Images/phonetemp.PNG)
+After the email is sent you have your main screen screen with all your information put up for your viewing with real time hourly updates.
 ![Main Page](Images/regularscreen.PNG)
+You can hit the phone temperature button to retrieve phone temperature at any given time.
+![Main Page](Images/phonetemp.PNG)

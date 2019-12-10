@@ -132,7 +132,9 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="Phone Temp" />
+                    android:background="#419DDB"
+                    android:text="Phone Temp"
+                    android:textColor="#EAF2F9" />
             </LinearLayout>
         </LinearLayout>
     </RelativeLayout>

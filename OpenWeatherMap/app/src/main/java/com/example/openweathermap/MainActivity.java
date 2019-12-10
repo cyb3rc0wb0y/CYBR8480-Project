@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -91,8 +92,11 @@ public class MainActivity extends AppCompatActivity {
 
                 Long updatedAt = jsonObj.getLong("dt");
                 String updatedAtText = "Updated at: " + new SimpleDateFormat("dd/MM/yyyy hh:mm a", Locale.ENGLISH).format(new Date(updatedAt * 1000));
+                String hookTemp = main.getString("temp");
                 String temp = main.getString("temp") + "°F";
+                String hookMin = main.getString("temp_min");
                 String tempMin = "Min Temp: " + main.getString("temp_min") + "°F";
+                String hookMax = main.getString("temp_max");
                 String tempMax = "Max Temp: " + main.getString("temp_max") + "°F";
                 String pressure = main.getString("pressure");
                 String humidity = main.getString("humidity");
@@ -104,6 +108,11 @@ public class MainActivity extends AppCompatActivity {
 
                 String address = jsonObj.getString("name") + ", " + sys.getString("country");
 
+                String webhook = "https://maker.ifttt.com/trigger/weather_forecast/with/key/oTQhwYJ4LQ1q65WjFyHCLx8YX98NYkHlBRaIrOGw5Pr?value1=" + hookTemp + "&value2=" + hookMin + "&value3=" + hookMax;
+                Toast.makeText(getApplicationContext(), "Sending Email Notification...", Toast.LENGTH_LONG).show();
+                HttpRequest.excuteGet(webhook);
+
+                //String test = HttpRequest.excuteGet("https://maker.ifttt.com/trigger/weather_forecast/with/key/oTQhwYJ4LQ1q65WjFyHCLx8YX98NYkHlBRaIrOGw5Pr?value1=" + hookTemp + "&value2=" + hookMin + "&value3=" + hookMax);
 
                 /* Populating extracted data into our views */
                 addressTxt.setText(address);

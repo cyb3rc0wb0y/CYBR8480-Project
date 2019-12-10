@@ -17,7 +17,13 @@ Software Requirements - Users need Android Studio and a phone that run Android. 
 
 Hardware Requirements - Just a Android Device with Android 4: Ice Cream Sandwich or newer.
 
- * Create ```installation``` and ```getting started``` instructions using markdown in your repository to detail what an end-user must do to setup and use your product.
+#### Installation
+Git Clone https://github.com/cyb3rc0wb0y/CYBR8480-Project.git (in directory of your choice)
+Open Android Studio
+File -> Open -> Location of Git Repository
+Compile Project / Run App
+- If errors follow android studio prereqs that it suggest should resolve most errors.
+Start Emulator or move APK to a Physical Phone
 
 #### Grading Criteria
 | | Meets expectations (9-10) | Some Issues (6-8) | Does not meet expectations (0-5)|

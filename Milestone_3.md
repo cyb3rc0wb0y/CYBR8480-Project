@@ -26,3 +26,7 @@ Compile Project / Run App
 Start Emulator or move APK to a Physical Phone
 
 ### Walkthrough
+
+![Main Page](Images/sendingemail.PNG)
+![Main Page](Images/phonetemp.PNG)
+![Main Page](Images/regularscreen.PNG)

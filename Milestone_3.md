@@ -1,31 +1,20 @@
 ## CYBR 8080 Project Milestone 3: Final MileStone
 
 ### Overview
-This project milestone tasks you with polishing your overall application and packaging your product for release. The components of the Final Milestone include:
-
-- [Polish](#polish) - Finish up development and use your remaining time in the class to make the best of your app.
-- [Packaging and Release](#packaging-and-release) - Package your code for release
-- [Presentation](#presentation) - Final Presentation
-
-**All materials will be submitted on GitHub, be sure to slack message me with your GitHub Repo link.**
+This is the final milestone for the weather app that we have been working on this semester. It can grab data on where the phone is located and reach out to an API called OpenWeather API. Then it sends back the most up to date information for your phone's location. It also will notify the user by email if the phone gets too hot or too cold.
 
 ### Polish
-You should use your remaining time to address feedback from your milestone 2 presentation and discussion with Dr. Hale to better finish your app development tasks and make it the best it can be in the time you have available. Polish your product by squashing as many bugs as possible, cleaning up the user interface, and making the app function as good as possible.
-
-#### Submission Materials
-Code artifacts submitted after the due date will not be considered. Make sure to have all of your code and artifacts committed to your project repository.
-
-#### Grading
-Polish will be measured by the degree of maturity and the degree of effort you have put into your product. There is no set rubric for this portion of the final milestone.
-
-**Total 100 points.**
+Fixed errors that happened in milestone 2.
 
 ### Packaging and Release
-An important part of developing or assessing a product is making the product or results accessible to those that might want to use it or them. This part of the final milestone tasks you with preparing your product and code for release by using relevant deployment strategies and by creating appropriate companion documentation. 
+Download the repository and load it into Android Studio and Android Studios will compile it. If errors happen it is most likely missing dependencies that need to be added. Android Studios will give you a prompt to install them. Once it is done you can load it onto a virtual device or grab the APK and move it to a physical phone.
 
 #### Submission materials
-For this submission, you should
- * Package your code and/or deployment environment for release using [github](https://github.com/). (Optional) you may also use other potential deployment solutions such as Android play store, an APK distribution, [docker](https://www.docker.com/), etc in addition to github. 
+The code can be grabbed from the github repository and compiled by anyone.
+
+#### Hardware/Software Requirements
+
+
  * Create a ```hardware/software requirements``` section in your github repository and list the hardware components, software, and other technology required to make your app work.
  * Create ```installation``` and ```getting started``` instructions using markdown in your repository to detail what an end-user must do to setup and use your product.
 

@@ -2,10 +2,12 @@
 
 package com.example.openweathermap;
 
+import android.hardware.Sensor;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -60,6 +62,23 @@ public class MainActivity extends AppCompatActivity {
             }
         };
         handler.post(runnableCode);
+
+        final Button buttonPT = findViewById(R.id.button_temp);
+        buttonPT.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Code here executes on main thread after user presses button
+
+                // Sensor Manager Documentation: https://developer.android.com/reference/android/hardware/SensorManager.html
+
+                // Temp Sensor Documentation: https://developer.android.com/reference/android/hardware/Sensor.html#STRING_TYPE_AMBIENT_TEMPERATURE
+                final String STRING_TYPE_AMBIENT_TEMPERATURE = Sensor.STRING_TYPE_AMBIENT_TEMPERATURE;
+
+                // Toast Documentation: https://developer.android.com/guide/topics/ui/notifiers/toasts
+                // Toast.makeText(getApplicationContext(), STRING_TYPE_AMBIENT_TEMPERATURE, Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Retrieving Phone Temp...", Toast.LENGTH_LONG).show();
+
+            }
+        });
 
     }
 

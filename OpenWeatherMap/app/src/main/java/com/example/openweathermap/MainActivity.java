@@ -73,9 +73,9 @@ public class MainActivity extends AppCompatActivity {
 
                 Long updatedAt = jsonObj.getLong("dt");
                 String updatedAtText = "Updated at: " + new SimpleDateFormat("dd/MM/yyyy hh:mm a", Locale.ENGLISH).format(new Date(updatedAt * 1000));
-                String temp = main.getString("temp") + "°C";
-                String tempMin = "Min Temp: " + main.getString("temp_min") + "°C";
-                String tempMax = "Max Temp: " + main.getString("temp_max") + "°C";
+                String temp = main.getString("temp") + "°F";
+                String tempMin = "Min Temp: " + main.getString("temp_min") + "°F";
+                String tempMax = "Max Temp: " + main.getString("temp_max") + "°F";
                 String pressure = main.getString("pressure");
                 String humidity = main.getString("humidity");
 

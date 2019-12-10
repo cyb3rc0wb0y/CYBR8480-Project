@@ -14,5 +14,6 @@
     <item name="colorAccent">@color/colorAccent</item>
     <item name="android:textColor">#FFFFFF</item>
 </style>
+<!-- Source Code Cite: https://www.androdocs.com/java/creating-an-android-weather-app-using-java.html -->
 
 </resources>

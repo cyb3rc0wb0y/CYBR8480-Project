@@ -16,7 +16,7 @@
                 android:text="OMAHA, US"/>
             <TextView android:id="@+id/updated_at" android:layout_width="wrap_content"
                 android:layout_height="wrap_content" android:textSize="14dp"
-                android:text="09 December 2019, 20:08 PM"/>
+                android:text="09 December 2019, 23:59 PM"/>
         </LinearLayout>
 
 
@@ -31,7 +31,7 @@
             <TextView android:id="@+id/temp" android:layout_width="wrap_content"
                 android:layout_height="wrap_content" android:textSize="90dp"
                 android:fontFamily="sans-serif-thin" android:layout_gravity="center"
-                android:text="29°C"/>
+                android:text="60°F"/>
 
             <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
                 android:orientation="horizontal" android:gravity="center">
@@ -137,7 +137,7 @@
                         android:textSize="12dp" android:text="Created By"/>
                     <TextView android:id="@+id/about" android:layout_width="wrap_content"
                         android:layout_height="wrap_content" android:textSize="14dp"
-                        android:text="BUTTONHERE"/>
+                        android:text="Flynn/Smith"/>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
@@ -151,6 +151,5 @@
     <TextView android:id="@+id/errorText" android:layout_width="wrap_content"
         android:layout_height="wrap_content" android:layout_centerInParent="true"
         android:visibility="gone" android:text="Something went wrong"/>
-
-
+<!-- Source Code Cite: https://www.androdocs.com/java/creating-an-android-weather-app-using-java.html -->
 </RelativeLayout>

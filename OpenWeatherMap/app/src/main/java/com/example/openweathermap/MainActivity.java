@@ -1,7 +1,10 @@
+// Source Code Cite: https://www.androdocs.com/java/creating-an-android-weather-app-using-java.html
+
 package com.example.openweathermap;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.TextView;
 
@@ -41,7 +44,22 @@ public class MainActivity extends AppCompatActivity {
         pressureTxt = findViewById(R.id.pressure);
         humidityTxt = findViewById(R.id.humidity);
 
-        new weatherTask().execute();
+        // new weatherTask().execute();
+
+        // Source Code Cite: https://guides.codepath.com/android/Repeating-Periodic-Tasks
+        // Documentation For Handler: https://developer.android.com/reference/android/os/Handler#postDelayed(java.lang.Runnable,%20long)
+        // Updates every minute, however free service updates < 2 hours so updates may be sparse
+        final Handler handler = new Handler();
+        // Define the code block to be executed
+        Runnable runnableCode = new Runnable() {
+            @Override
+            public void run() {
+                new weatherTask().execute();
+                handler.postDelayed(this, 100000);
+            }
+        };
+        handler.post(runnableCode);
+
     }
 
     class weatherTask extends AsyncTask<String, Void, String> {

@@ -22,5 +22,5 @@
             </intent-filter>
         </activity>
     </application>
-
+<!-- Source Code Cite: https://www.androdocs.com/java/creating-an-android-weather-app-using-java.html -->
 </manifest>

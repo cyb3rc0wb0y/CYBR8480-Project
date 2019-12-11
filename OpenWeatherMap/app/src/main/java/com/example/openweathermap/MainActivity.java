@@ -96,9 +96,6 @@ public class MainActivity extends AppCompatActivity {
         protected String doInBackground(String... args) {
             String response = HttpRequest.excuteGet("https://api.openweathermap.org/data/2.5/weather?q=" + CITY + "&units=imperial&appid=" + API);
 
-
-
-
             return response;
         }
 
@@ -154,7 +151,6 @@ public class MainActivity extends AppCompatActivity {
                 /* Views populated, Hiding the loader, Showing the main design */
                 findViewById(R.id.loader).setVisibility(View.GONE);
                 findViewById(R.id.mainContainer).setVisibility(View.VISIBLE);
-
 
             } catch (JSONException e) {
                 findViewById(R.id.loader).setVisibility(View.GONE);
